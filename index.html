@@ -11,41 +11,41 @@
     <meta name="description" content="">
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>Menu</li>
-        <li>About Us</li>
-        <li>Order Now</li>
+    <nav class="navbar">
+      <ul class="nav">
+        <li class="nav-item">Home</li>
+        <li class="nav-item">Menu</li>
+        <li class="nav-item">About Us</li>
+        <li id="red" class="nav-item text-uppercase">Order Now</li>
       </ul>
     </nav>
-    <header>
-      <h1>Bob's Burgers</h1>
-      <button>Order Now</button>
+    <header class="jumbotron text-center">
+      <h1>Bob's <span id="red">Burgers</span></h1>
+      <button class="btn btn-warning text-uppercase">Order Now</button>
     </header>
-    <main>
-      <section>
-        <article>
-          <h2>World's Best Burgers</h2>
+    <main class="container">
+      <section class="row">
+        <article class="col-8">
+          <h2 class="text-uppercase">World's Best Burgers</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
-          <button>View Menu</button>
+          <button class="btn btn-warning text-uppercase">View Menu</button>
         </article>
-        <span>
+        <span class="col-4">
           <img src ="" alt="" title=""/>
         </span>
       </section>
-      <section>
-        <span>
+      <section class="row">
+        <span class="col-4">
           <img src="" alt="" title="" />
         </span>
-        <article>
-          <h2>Dine-in or Take-out</h2>
+        <article class ="col-8">
+          <h2><span class="text-uppercase">Dine-in</span> or <span id="red" class="text-uppercase">Take-out</span></h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
-          <button>Contact Us</button>
+          <button class="btn btn-warning text-uppercase">Contact Us</button>
         </article>
       </section>
     </main>
-    <footer>
+    <footer class="jumbotron">
       <img src="" alt="" title="" />
     </footer>
     <!-- Optional JavaScript -->
