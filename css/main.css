@@ -1,12 +1,23 @@
+.red-color {
+  color: #ee252f;
+}
 button {
   background-color: #f8df20 !important;
 }
-#red {
-  color: #ee252f;
+button:hover {
+  border: 2px solid #ee252f;
 }
 nav {
   background-color: #f8df20 !important;
   height: 100px;
+}
+nav .container {
+  -webkit-box-pack: left !important;
+      -ms-flex-pack: left !important;
+          justify-content: left !important;
+}
+nav .container li {
+  padding-right: 30px;
 }
 header {
   background-image: url(../img/banner-bg2.png);

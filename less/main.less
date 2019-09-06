@@ -1,17 +1,26 @@
 @import "variables";
 
 //Mixins
+.red-color {
+  color: @red-primary;
+}
 button {
   background-color: @yellow-primary !important;
-}
-#red {
-  color: @red-primary;
+  &:hover {
+    border: 2px solid @red-primary;
+  }
 }
 
 //Generalized styles
 nav {
   background-color: @yellow-primary !important;
   height: 100px;
+  .container {
+    justify-content: left !important;
+    li {
+      padding-right: 30px;
+    }
+  }
 }
 header {
   background-image: url(../img/banner-bg2.png);
