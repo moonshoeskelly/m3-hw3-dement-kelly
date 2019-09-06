@@ -1,17 +1,37 @@
+button {
+  background-color: #f8df20 !important;
+}
+#red {
+  color: #ee252f;
+}
 nav {
   background-color: #f8df20 !important;
   height: 100px;
 }
-nav #red {
-  color: #ee252f;
-}
 header {
-  background-image: url(../img/banner-bg.png);
+  background-image: url(../img/banner-bg2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 header img {
   display: block;
   margin: 0 auto;
+  height: 140px;
+  padding-bottom: 10px;
 }
-header button {
-  background-color: #f8df20 !important;
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+footer {
+  border-top: 8px solid #f8df20;
+  height: 125px;
+  background-color: #080702 !important;
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
+}
+footer img {
+  height: 80px;
+  margin-top: 20px;
 }

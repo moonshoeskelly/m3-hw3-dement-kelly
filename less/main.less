@@ -1,20 +1,43 @@
 @import "variables";
 
+//Mixins
+button {
+  background-color: @yellow-primary !important;
+}
+#red {
+  color: @red-primary;
+}
+
 //Generalized styles
 nav {
   background-color: @yellow-primary !important;
   height: 100px;
-  #red {
-    color: @red-primary;
-  }
 }
 header {
-  background-image: url(../img/banner-bg.png);
+  background-image: url(../img/banner-bg2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 140px;
+      padding-bottom: 10px;
+    }
+}
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+footer {
+  border-top: 8px solid @yellow-primary;
+  height: 125px;
+  background-color: @black-primary !important;
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
   img {
-    display: block;
-    margin: 0 auto;
-  }
-  button {
-    background-color: @yellow-primary !important;
+    height: 80px;
+    margin-top: 20px;
   }
 }
