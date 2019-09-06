@@ -15,10 +15,19 @@ button {
 nav {
   background-color: @yellow-primary !important;
   height: 100px;
-  .container {
-    justify-content: left !important;
+  font-size: .9rem;
+  padding-top: 10px;
     li {
       padding-right: 30px;
+      padding-top: 10px;
+    }
+  @media (min-width: 414px) {
+    font-size: 1rem;
+    .container {
+      justify-content: left !important;
+      li {
+      padding-top: .5rem;
+      }
     }
   }
 }
@@ -30,13 +39,55 @@ header {
     img {
       display: block;
       margin: 0 auto;
-      height: 140px;
+      height: 100px;
       padding-bottom: 10px;
     }
+  @media (min-width: 414px) {
+    img {
+    height: 120px;
+    }
+  }
+  @media (min-width: 576px) {
+    img {
+    height: 140px;
+    }
+  }
+}
+.container {
+  @media (min-width: 576px) {
+    max-width: 560px;
+  }
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+  @media (min-width: 992px) {
+      max-width: 960px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
 }
 section {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  span {
+    text-align: center !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  @media (min-width: 576px) {
+    flex-wrap: nowrap !important;
+    padding-top: 30px;
+    padding-bottom: 30px;
+      span {
+        text-align: left !important;
+    }
+  }
+  @media (min-width: 768px) {
+    flex-wrap: nowrap !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 footer {
